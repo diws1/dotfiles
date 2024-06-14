@@ -7,3 +7,5 @@ I use <i>xfwm4</i> as my main window manager, followed by <i>dwm</i> and <i>twm<
 ![](https://github.com/diws1/dotfiles/blob/main/screenshots/xfwm_2.png)
 ### dwm
 ![](https://github.com/diws1/dotfiles/blob/main/screenshots/dwm_1.png)
+### twm
+![](https://github.com/diws1/dotfiles/blob/main/screenshots/twm_1.png)
