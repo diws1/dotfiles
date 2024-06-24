@@ -1,0 +1,67 @@
+# quit
+super + Escape
+        pkill xfwm4
+
+# terminal
+super + Return
+        alacritty
+
+# program launcher
+super + @space
+        rofi -show drun
+
+# file manageer
+super + d
+        thunar
+
+# browser
+super + b
+        chromium
+
+# screenshots
+Print
+	screenshot.sh
+super + s
+	xfce4-screenshooter
+
+# audio player
+super + m
+	alacritty -e ncmpcpp
+
+# audio visualizer
+super + shift + m
+	tilda -c cava
+
+# lockscreen
+super + Delete
+        xtrlock
+super + y
+	i3lock -i ~/wall.png
+
+# reload sxhkd config
+super + shift + r
+	pkill -USR1 -x sxhkd
+
+# brightness control
+#XF86MonBrightnessUp
+#       {brightnessctl set +5% , notify-send "Brightness $(brightness.sh)"}
+#XF86MonBrightnessDown
+#       brightnessctl set 5%- ;\
+#       notify-send "Brightness $(brightness.sh)"
+#super + F5
+#       brightnessctl set +5% ;\
+#       notify-send "Brightness $(brightness.sh)"
+
+# volume control
+#XF86AudioRaiseVolume
+#       wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%+ ;\
+#       notify-send "Volume $(volume.sh)"
+#XF86AudioLowerVolume
+#       wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%- ;\
+#       notify-send "Volume $(volume.sh)"
+#XF86AudioMute
+#       wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle ;\
+#       notify-send "Volume mute"
+#XF86AudioMicMute
+#       wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+
