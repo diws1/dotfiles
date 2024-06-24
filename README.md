@@ -1,7 +1,7 @@
 # dotfiles ✨
 
 ## Introduction 😄
-I use <i>xfwm4</i> as my main window manager, followed by <i>dwm</i> and <i>twm</i> as other options. You can use this repository for inspiration.
+I use <i>xfwm4</i> as my main window manager, followed by <i>dwm</i> and <i>twm</i> as other options. You can use this repository for inspiration.\
 The applications that I use:
 
 - DE/WM : xfwm, dwm and twm
@@ -13,7 +13,7 @@ The applications that I use:
 - Screenshoter: scrot, xfce4-screenshooter
 - Fonts: JetBrains Mono, Fira Code, Terminus (TTF), Siji, Font Awesome
 - Wallpaper: nitrogen, feh, xwallpaper
-- Themes: Sweet Amber Blue Dark
+- Theme: Sweet Amber Blue Dark
 - Icons: Nordzy
 - Lockscreen: xtrlock
 - Notification: xfce4-notifyd
