@@ -1,0 +1,76 @@
+; ______________
+; |  \o| . ||__   https://youtube.com/@diws
+; |__/||_|_| __|  https://github.com/diws1
+;
+; Polybar Theme 6 (T6)
+
+
+[global/wm]
+include-file = ./modules/separator
+include-file = ./modules/allmodules
+
+[settings]
+screenchange-reload = true
+pseudo-transparency = true
+
+
+
+;-_-_-_-_-_-_-_-_TOP BAR-_-_-_-_-_-_-_-_-_
+
+[bar/top]
+width = 99.6%
+height = 20pt
+radius = 6
+bottom = false
+offset-x = 3
+offset-y = 3
+
+; dpi = 96
+
+background = #d1141819
+foreground = #f9f9f9
+
+line-size = 3pt
+
+border-size = 1pt
+border-color = #343a41
+
+padding-left = 0
+padding-right = 0
+
+module-margin = 0
+modules-left = user CSEP xworkspaces CSEP filesystem memory cpu
+modules-center =  xwindow
+modules-right =  browser filemanager terminal mousepad music imgview screenshot CSEP wmsettings CSEP pulseaudio CSEP battery CSEP CSEP wallpapers CSEP clock 
+
+;separator = 
+;separator-foreground = 
+
+;--Text--
+font-0 = Terminus (TTF):pixelsize=9;2
+;--Icons--
+font-1 = FontAwesome:pixelsize=9;2
+font-2 = Material Design Icons:pixelsize=10;2
+;--External separator--
+font-3 = mononoki:pixelsize=18;3
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+enable-ipc = true
+
+;tray-position = right
+
+; wm-restack = generic
+; wm-restack = bspwm
+; wm-restack = i3
+
+; override-redirect = true
+
+; vim:ft=dosini
+
+
+
+
+
+

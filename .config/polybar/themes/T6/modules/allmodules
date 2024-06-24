@@ -1,0 +1,265 @@
+; Polybar Theme 6 (T6)
+
+; TOP BAR
+
+;-_-_-_-_-_-_-_-_-_-_-_-module left_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/user]
+type = custom/script
+exec = echo "<label>"
+label = %{B#d1141819}%{F#946ff7}
+label-padding-left = 1
+click-left = rofi -show drun
+
+[module/xworkspaces]
+type = internal/xworkspaces
+;label-active = 
+label-active = %name%
+label-active-background = #d1141819
+label-active-foreground = #946ff7
+label-active-underline= #00f9f9f9
+label-active-padding = 1
+
+label-occupied = %name%
+label-occupied-background = #d1141819
+label-occupied-foreground = #f9f9f9
+label-occupied-underline= #00141819
+label-occupied-padding = 1
+
+label-urgent = %name%
+label-urgent-background = #d1141819
+label-urgent-foreground = #f9f9f9
+label-urgent-underline= #00141819
+label-urgent-padding = 1
+
+label-empty = %name%
+label-empty-background = #d1141819
+label-empty-foreground = #808080
+label-empty-underline= #00141819
+label-empty-padding = 1
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+label-mounted = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage_used%%
+label-unmounted = %{F#808080}%mountpoint% not mounted
+label-mounted-padding-right = 1
+
+[module/memory]
+type = internal/memory
+interval = 2
+label = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage_used:2%%
+label-padding-right = 1
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+label = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage:2%%
+
+
+;-_-_-_-_-_-_-_-_-_-_-_-module center_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/xwindow]
+type = internal/xwindow
+label = "%title%"
+label-foreground = #f9f9f9
+label-maxlen = 40
+
+
+;-_-_-_-_-_-_-_-_-_-_-_-module right_-_-_-_-_-_-_-_-_-_-_-_-_
+
+[module/browser]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = chromium
+
+[module/filemanager]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = thunar
+
+[module/terminal]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = xfce4-terminal
+
+[module/mousepad]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = mousepad
+
+[module/music]
+type = custom/script
+exec = echo "<label>"
+;label = "%{F#f9f9f9}%{B#d1141819}"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = alacritty -e ncmpcpp
+
+[module/imgview]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = viewnior
+
+[module/screenshot]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+label-padding-right = 1
+click-left = xfce4-screenshooter
+
+[module/wmsettings]
+type = custom/menu
+label-open = "%{F#946ff7}%{B#d1141819}"
+label-open-padding-right = 1
+label-close = "%{F#946ff7}%{B#d1141819} "
+menu-0-0 = "%{F#f9f9f9}%{B#d1141819}  "
+menu-0-0-exec = xfwm4-settings
+menu-0-1 = "%{F#f9f9f9}%{B#d1141819}  "
+menu-0-1-exec = xfwm4-tweaks-settings
+menu-0-2 = "%{F#f9f9f9}%{B#d1141819} "
+menu-0-2-exec = xfwm4-workspace-settings
+menu-0-2-padding-right = 1
+
+[module/pulseaudio]
+type = internal/pulseaudio
+label-volume = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage%%
+label-muted = %{F#808080}%{B#d1141819}%{F#f9f9f9}muted
+click-right = pavucontrol
+
+[module/battery]
+type = internal/battery
+interval = 2
+label-charging = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage%%
+label-discharging = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage%%
+label-full = %{F#946ff7}%{B#d1141819}%{F#f9f9f9}%percentage%%
+
+[module/wallpapers]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#946ff7}%{B#d1141819}"
+label-padding-right = 1
+click-left = nitrogen
+
+[module/date]
+type = internal/date
+interval = 1
+date = %a %d %b
+label = %{F#adff87}%{B#d1141819} %{F#f9f9f9}%date%
+
+[module/clock]
+type = internal/date
+interval = 1
+date-alt = %a %d %b
+date = %R
+label = %{F#946ff7}%{B#d1141819} %{F#f9f9f9}%date%
+label-padding-right = 1
+
+
+
+; ALL MODULES 
+
+[module/menu]
+type = custom/script
+exec = echo "<label>"
+label = %{B#d1141819}
+click-left = rofi -show drun
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+label-layout = %{F#D187D7} %{F#F9F9F9}%layout%
+label-layout-background = #d1141819
+
+label-indicator-padding = 0
+label-indicator-margin = 0
+label-indicator-foreground = #f9f9f9
+label-indicator-background = #d1141819
+
+[network-base]
+type = internal/network
+interval = 5
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+[module/wlan]
+inherit = network-base
+interface-type = wireless
+label-connected = %{F#c9c9c9}%{B#d1141819} %{F#f9f9f9}%essid%
+label-disconnected = %{F#808080}%{B#d1141819} %{F#808080} -
+
+[module/eth]
+inherit = network-base
+interface-type = wired
+label-connected = %{F#c9c9c9}%{B#d1141819} %{F#f9f9f9}Ready
+label-disconnected = %{F#808080}%{B#d1141819} %{F#808080} -
+
+[module/mpd]
+type = internal/mpd
+interval = 1
+format-online = <label-song>%{B#d1141819} <icon-prev>%{B#d1141819} <toggle>%{B#d1141819} <icon-next>
+format-online-prefix = " "
+format-online-prefix-foreground = #f9f9f9
+format-online-prefix-background = #d1141819
+format-offline = <label-offline>
+format-offline-prefix = " "
+format-offline-prefix-foreground = #f9f9f9
+format-offline-prefix-background = #d1141819
+label-song = "%title% "
+label-song-background = #d1141819
+label-song-maxlen = 20
+label-offline = "Offline"
+label-offline-background = #d1141819
+toggle-on-foreground = #f9f9f9
+toggle-on-background = #d1141819
+toggle-off-foreground = #f9f9f9
+toggle-off-background = #d1141819
+icon-play = 
+icon-play-foreground = #999999
+icon-play-background = #d1141819
+icon-pause = 
+icon-pause-foreground = #999999
+icon-pause-background = #d1141819
+icon-stop = 
+icon-stop-foreground = #999999
+icon-stop-background = #d1141819
+icon-next = 
+icon-next-foreground = #999999
+icon-next-background = #d1141819
+icon-prev = 
+icon-prev-foreground = #999999
+icon-prev-background = #d1141819
+
+[module/powermenu]
+type = custom/menu
+label-open = "%{F#EB704D}"
+label-open-background = #d1141819
+label-close = "%{F#f9f9f9} "
+label-close-background = #d1141819
+menu-0-0 = "%{F#f9f9f9}%{B#d1141819}  "
+menu-0-0-exec = polybarT1
+menu-0-1 = "%{F#f9f9f9}%{B#d1141819} "
+menu-0-1-exec = pkill xfwm4
+
+[module/themes]
+type = custom/script
+exec = echo "<label>"
+label = "%{F#f9f9f9}%{B#d1141819}"
+;label-padding-right = 2
+click-left = lxappearance
+
+
+
+

@@ -1,0 +1,19 @@
+; Polybar Theme 6 (T6)
+
+[module/RSEP]
+type = custom/text
+content = ""
+content-background = #00000000
+content-foreground = #d1141819
+
+[module/LSEP]
+type = custom/text
+content = ""
+content-background = #00000000
+content-foreground = #d1141819
+
+[module/CSEP]
+type = custom/text
+content = " "
+content-background = #d1141819
+content-foreground = #00000000
