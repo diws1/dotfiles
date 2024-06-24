@@ -1,0 +1,29 @@
+# Colors (Nelo)
+colors:
+  # Default colors
+  primary:
+    background: '0x141819'
+    foreground: '0xffffff'
+
+  # Normal colors
+  normal:
+    black:   '0x212429'
+    red:     '0xEB704D'
+    green:   '0x74B69A'
+    yellow:  '0xFACD7B'
+    blue:    '0x07A9E3'
+    magenta: '0xD187D7'
+    cyan:    '0x08B5BA'
+    white:   '0xf9f9f9'
+
+  # Bright colors
+  bright:
+    black:   '0x212429'
+    red:     '0xEB704D'
+    green:   '0x74B69A'
+    yellow:  '0xFACD7B'
+    blue:    '0x07A9E3'
+    magenta: '0xD187D7'
+    cyan:    '0x08B5BA'
+    white:   '0xf9f9f9'
+
