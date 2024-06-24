@@ -2,7 +2,7 @@
 
 ## Introduction 😄
 I use <i>xfwm4</i> as my main window manager, followed by <i>dwm</i> and <i>twm</i> as other options. You can use this repository for inspiration.\
-The applications that I use:
+The applications that I use (Thank you for all creator):
 
 - DE/WM : xfwm, dwm and twm
 - Panel: polybar, sxstatus, xmobar
@@ -12,7 +12,8 @@ The applications that I use:
 - Text Editor: nano, vim, mousepad
 - Screenshoter: scrot, xfce4-screenshooter
 - Fonts: JetBrains Mono, Fira Code, Terminus (TTF), Siji, Font Awesome
-- Wallpaper: nitrogen, feh, xwallpaper
+- Wallpaper sett: nitrogen, feh, xwallpaper
+- Theme sett: lxappereance
 - Theme: Sweet Amber Blue Dark
 - Icons: Nordzy
 - Lockscreen: xtrlock
@@ -22,6 +23,7 @@ The applications that I use:
 - MP4 Player: mpv
 - Image view: viewnior
 - Fetch: dfetch
+
 
 ### xfwm4
 ![](https://github.com/diws1/dotfiles/blob/main/screenshots/xfwm_2.png)
