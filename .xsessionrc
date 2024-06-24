@@ -16,11 +16,8 @@ mpd &
 ### START THE APPLICATIONS ON DE/WM ###
 
 wm_name=$(echo $DESKTOP_SESSION)
-wm_1=xfwm
-wm_2=dwm
-wm_3=twm
 
-if [ $wm_name = $wm_1 ]; then
+if [ $wm_name = xfwm ]; then
     # wallpaper
     nitrogen --restore &
     # panel
@@ -29,7 +26,7 @@ if [ $wm_name = $wm_1 ]; then
     sxhkd &
     picom -f &
 
-elif [ $wm_name = $wm_2 ]; then
+elif [ $wm_name = dwm ]; then
     # wallpaper
     ~/.fehbg &
     # panel
